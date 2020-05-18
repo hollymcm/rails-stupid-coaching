@@ -1,0 +1,23 @@
+<h1>Your stupid coach says...</h1>
+
+<div class="container">
+  <div class="card">
+   <p><%= "#{params[:answer]}" %></p>
+   <div class="footer">
+     <p>- You</p>
+   </div>
+  </div>
+</div>
+<div class="container">
+  <div class="card">
+    <p><%= "#{@answer}"%></p>
+    <div class="footer">
+      <p>- Your coach</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="btn">
+    <%= link_to "Ask Again", ask_path %>
+  </div>
+</div>
